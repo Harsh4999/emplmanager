@@ -9,7 +9,7 @@ public class db {
 		try{  
 			Class.forName("com.mysql.jdbc.Driver");  
 			Connection con=DriverManager.getConnection(  
-			"jdbc:mysql://localhost:3306/harsh","root","Harsh12345#");  
+			"jdbc:mysql://localhost:3306/harsh","root","password");  
 			String sql = "insert into empl values(?,?,?,?,?);";
 			System.out.println(obj.empid+" "+obj.firstName+" "+obj.lastName);
 			PreparedStatement stmt=con.prepareStatement(sql);
@@ -31,7 +31,7 @@ public class db {
 //		try{  
 //			Class.forName("com.mysql.jdbc.Driver");  
 //			Connection con=DriverManager.getConnection(  
-//			"jdbc:mysql://localhost:3306/harsh","root","Harsh12345#");  
+//			"jdbc:mysql://localhost:3306/harsh","root","");  
 //			Statement st = con.createStatement();
 //			ResultSet rs = st.executeQuery("SELECT COUNT(*) FROM empl WHERE empid="+obj.empid);
 //			int c=0;
